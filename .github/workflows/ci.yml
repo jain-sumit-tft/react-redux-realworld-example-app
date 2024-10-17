@@ -15,14 +15,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
+        
         with:
-          node-version: '18.20'
-
-      - name: Install dependencies
-        run: yarn
-
-      - name: Run Automation Tests
-        run: echo "testing"
+          repository: user/repo-a  # Replace with your Repo A's name
+          event-type: run-tests
+          token: ${{ secrets.GITHUB_TOKEN }}
