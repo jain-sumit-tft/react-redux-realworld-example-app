@@ -17,6 +17,5 @@ jobs:
         uses: actions/checkout@v3
         
         with:
-          repository: Automation-exercise-Livelike  # Replace with your Repo A's name
-          event-type: run-tests
+          repository: jain-sumit-tft/Automation-exercise-Livelike  # Replace with your Repo A's name
           token: ${{ secrets.GITHUB_TOKEN }}
