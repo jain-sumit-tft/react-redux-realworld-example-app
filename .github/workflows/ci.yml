@@ -18,4 +18,5 @@ jobs:
         
         with:
           repository: jain-sumit-tft/Automation-exercise-Livelike  # Replace with your Repo A's name
+          event-type: run-tests
           token: ${{ secrets.GITHUB_TOKEN }}
