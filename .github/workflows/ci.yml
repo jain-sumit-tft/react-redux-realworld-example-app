@@ -3,10 +3,10 @@ name: CI for Dev Branch
 on:
   push:
     branches:
-      - dev
+      - master
   pull_request:
     branches:
-      - dev
+      - master
 
 jobs:
   run-tests:
@@ -22,7 +22,7 @@ jobs:
           node-version: '18.20'
 
       - name: Install dependencies
-        run: npm install
+        run: yarn
 
       - name: Run Automation Tests
         run: echo "testing"
