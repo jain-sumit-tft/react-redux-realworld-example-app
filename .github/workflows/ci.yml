@@ -17,6 +17,6 @@ jobs:
         uses: actions/checkout@v3
         
         with:
-          repository: user/repo-a  # Replace with your Repo A's name
+          repository: Automation-exercise-Livelike  # Replace with your Repo A's name
           event-type: run-tests
           token: ${{ secrets.GITHUB_TOKEN }}
