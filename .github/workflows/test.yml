@@ -16,4 +16,4 @@ jobs:
           -H "Authorization: token ${{ secrets.PAT }}" \
           -H "Accept: application/vnd.github.v3+json" \
           https://api.github.com/repos/jain-sumit-tft/Automation-exercise-Livelike/actions/workflows/playwright.yml/dispatches \
-          -d '{"ref":"master"}'
+          -d '{"ref":"main"}'
