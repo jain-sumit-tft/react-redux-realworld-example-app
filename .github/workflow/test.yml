@@ -1,0 +1,19 @@
+name: Trigger LiveLike Assignment Workflow
+on:
+  push:
+    branches:
+      - master  # Trigger on push/merge to the dev branch
+  pull_request:
+    branches:
+      - master  # Trigger if a PR is merged into the dev branch
+jobs:
+  trigger-livelike-assignment-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Automation tests of Automation Exercise framework
+        run: |
+          curl -X POST \
+          -H "Authorization: token ${{ secrets.PAT }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          https://api.github.com/repos/jain-sumit-tft/Automation-exercise-Livelike/actions/workflows/playwright.yml/dispatches \
+          -d '{"ref":"master"}'
