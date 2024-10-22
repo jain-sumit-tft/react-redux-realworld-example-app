@@ -74,3 +74,4 @@ The example application is a social blogging site (i.e. a Medium.com clone) call
 [![Brought to you by Thinkster](https://raw.githubusercontent.com/gothinkster/realworld/master/media/end.png)](https://thinkster.io)
 
 // Testing - Trigger automation tests of automation framework
+// demo to trigger automation tests
